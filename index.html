@@ -17,10 +17,10 @@
 <script>const b=document.getElementById('menuButton'),d=document.getElementById('dropdown');b.addEventListener('click',()=>{let o=d.classList.toggle('open');b.setAttribute('aria-expanded',String(o))});document.addEventListener('click',e=>{if(!e.target.closest('.menu-wrap')){d.classList.remove('open');b.setAttribute('aria-expanded','false')}});document.querySelectorAll('[data-buy]').forEach(x=>x.addEventListener('click',()=>window.open('https://discord.gg/zqEDGEcYD','_blank','noopener')));document.getElementById('year').textContent=new Date().getFullYear();</script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
-// IMPORTANT: Replace these two placeholders with your Supabase Project URL and anon/public key.
+// Supabase Project URL and publishable key are configured for this project.
 // Never put a Supabase service_role/secret key in a public GitHub Pages website.
-const SUPABASE_URL = 'PASTE_YOUR_SUPABASE_PROJECT_URL_HERE';
-const SUPABASE_ANON_KEY = 'PASTE_YOUR_SUPABASE_ANON_PUBLIC_KEY_HERE';
+const SUPABASE_URL = 'https://cbbsqrhjdtggxejncfdt.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_d5EhqaQA3vBTQnQUvc3lGg_yr5VQ6Ch';
 const AUTH_MAX_AGE_MS = 30 * 24 * 60 * 60 * 1000;
 const authGate = document.getElementById('authGate');
 const authForm = document.getElementById('authForm');
